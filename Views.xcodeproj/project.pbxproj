@@ -19,6 +19,12 @@
 		1B94D42619C1648D0052EA92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B94D40E19C1648D0052EA92 /* UIKit.framework */; };
 		1B94D42E19C1648D0052EA92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B94D42C19C1648D0052EA92 /* InfoPlist.strings */; };
 		1B94D43019C1648D0052EA92 /* ViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B94D42F19C1648D0052EA92 /* ViewsTests.m */; };
+		1B94D43B19C164B90052EA92 /* LWCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B94D43A19C164B90052EA92 /* LWCViewController.m */; };
+		1B94D44319C164FB0052EA92 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B94D44219C164FB0052EA92 /* BasicViewController.m */; };
+		1B94D44719C165160052EA92 /* LWCFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B94D44519C165160052EA92 /* LWCFirstViewController.m */; };
+		1B94D44819C165160052EA92 /* LWCFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B94D44619C165160052EA92 /* LWCFirstViewController.xib */; };
+		1B94D44C19C165580052EA92 /* LWCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B94D44A19C165580052EA92 /* LWCSecondViewController.m */; };
+		1B94D44D19C165580052EA92 /* LWCSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B94D44B19C165580052EA92 /* LWCSecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,16 @@
 		1B94D42B19C1648D0052EA92 /* ViewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViewsTests-Info.plist"; sourceTree = "<group>"; };
 		1B94D42D19C1648D0052EA92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1B94D42F19C1648D0052EA92 /* ViewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewsTests.m; sourceTree = "<group>"; };
+		1B94D43919C164B90052EA92 /* LWCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCViewController.h; sourceTree = "<group>"; };
+		1B94D43A19C164B90052EA92 /* LWCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCViewController.m; sourceTree = "<group>"; };
+		1B94D44119C164FB0052EA92 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
+		1B94D44219C164FB0052EA92 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
+		1B94D44419C165160052EA92 /* LWCFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCFirstViewController.h; sourceTree = "<group>"; };
+		1B94D44519C165160052EA92 /* LWCFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCFirstViewController.m; sourceTree = "<group>"; };
+		1B94D44619C165160052EA92 /* LWCFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LWCFirstViewController.xib; sourceTree = "<group>"; };
+		1B94D44919C165580052EA92 /* LWCSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCSecondViewController.h; sourceTree = "<group>"; };
+		1B94D44A19C165580052EA92 /* LWCSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCSecondViewController.m; sourceTree = "<group>"; };
+		1B94D44B19C165580052EA92 /* LWCSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LWCSecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +125,16 @@
 			children = (
 				1B94D41919C1648D0052EA92 /* LWCAppDelegate.h */,
 				1B94D41A19C1648D0052EA92 /* LWCAppDelegate.m */,
+				1B94D43919C164B90052EA92 /* LWCViewController.h */,
+				1B94D43A19C164B90052EA92 /* LWCViewController.m */,
+				1B94D44119C164FB0052EA92 /* BasicViewController.h */,
+				1B94D44219C164FB0052EA92 /* BasicViewController.m */,
+				1B94D44419C165160052EA92 /* LWCFirstViewController.h */,
+				1B94D44519C165160052EA92 /* LWCFirstViewController.m */,
+				1B94D44619C165160052EA92 /* LWCFirstViewController.xib */,
+				1B94D44919C165580052EA92 /* LWCSecondViewController.h */,
+				1B94D44A19C165580052EA92 /* LWCSecondViewController.m */,
+				1B94D44B19C165580052EA92 /* LWCSecondViewController.xib */,
 				1B94D41C19C1648D0052EA92 /* Images.xcassets */,
 				1B94D41119C1648D0052EA92 /* Supporting Files */,
 			);
@@ -221,6 +247,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B94D41519C1648D0052EA92 /* InfoPlist.strings in Resources */,
+				1B94D44D19C165580052EA92 /* LWCSecondViewController.xib in Resources */,
+				1B94D44819C165160052EA92 /* LWCFirstViewController.xib in Resources */,
 				1B94D41D19C1648D0052EA92 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +270,10 @@
 			files = (
 				1B94D41719C1648D0052EA92 /* main.m in Sources */,
 				1B94D41B19C1648D0052EA92 /* LWCAppDelegate.m in Sources */,
+				1B94D44319C164FB0052EA92 /* BasicViewController.m in Sources */,
+				1B94D44C19C165580052EA92 /* LWCSecondViewController.m in Sources */,
+				1B94D43B19C164B90052EA92 /* LWCViewController.m in Sources */,
+				1B94D44719C165160052EA92 /* LWCFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -347,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

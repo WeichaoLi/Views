@@ -7,6 +7,7 @@
 //
 
 #import "LWCAppDelegate.h"
+#import "LWCViewController.h"
 
 @implementation LWCAppDelegate
 
@@ -14,6 +15,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    _viewController = [[LWCViewController alloc] init];
+    self.window.rootViewController = _viewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

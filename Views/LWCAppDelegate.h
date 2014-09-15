@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class LWCViewController;
 
 @interface LWCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) LWCViewController *viewController;
 
 @end
