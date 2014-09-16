@@ -8,6 +8,7 @@
 
 #import "LWCSecondViewController.h"
 #import "LWCFirstViewController.h"
+#import "LWCThirdViewController.h"
 
 @interface LWCSecondViewController ()
 
@@ -32,8 +33,15 @@
     
     if (self.leftViewController == nil) {
         LWCFirstViewController *firstVC = [[LWCFirstViewController alloc] initWithNibName:@"LWCFirstViewController" bundle:nil];
-        [self SetLeftController:firstVC RightController:nil];
-        [self.parentViewController addChildViewController:self.leftViewController];
+        self.leftViewController = firstVC;
+        firstVC.rightViewController = self;
+//        [self.parentViewController addChildViewController:self.leftViewController];
+    }
+    if (self.rightViewController == nil) {
+        LWCThirdViewController *thirdVC = [[LWCThirdViewController alloc] initWithNibName:@"LWCThirdViewController" bundle:nil];
+        self.rightViewController = thirdVC;
+        thirdVC.leftViewController = self;
+        [self.parentViewController addChildViewController:self.rightViewController];
     }
 }
 

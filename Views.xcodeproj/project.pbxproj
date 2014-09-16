@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B5670DB19C7CDC900B76E56 /* LWCThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B5670D919C7CDC900B76E56 /* LWCThirdViewController.xib */; };
+		1B5670DE19C7CF3700B76E56 /* LWCThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5670DD19C7CF3700B76E56 /* LWCThirdViewController.m */; };
 		1B94D40B19C1648D0052EA92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B94D40A19C1648D0052EA92 /* Foundation.framework */; };
 		1B94D40D19C1648D0052EA92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B94D40C19C1648D0052EA92 /* CoreGraphics.framework */; };
 		1B94D40F19C1648D0052EA92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B94D40E19C1648D0052EA92 /* UIKit.framework */; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B5670D919C7CDC900B76E56 /* LWCThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LWCThirdViewController.xib; sourceTree = "<group>"; };
+		1B5670DC19C7CF3700B76E56 /* LWCThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCThirdViewController.h; sourceTree = "<group>"; };
+		1B5670DD19C7CF3700B76E56 /* LWCThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCThirdViewController.m; sourceTree = "<group>"; };
 		1B94D40719C1648D0052EA92 /* Views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Views.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B94D40A19C1648D0052EA92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1B94D40C19C1648D0052EA92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -135,6 +140,9 @@
 				1B94D44919C165580052EA92 /* LWCSecondViewController.h */,
 				1B94D44A19C165580052EA92 /* LWCSecondViewController.m */,
 				1B94D44B19C165580052EA92 /* LWCSecondViewController.xib */,
+				1B5670DC19C7CF3700B76E56 /* LWCThirdViewController.h */,
+				1B5670DD19C7CF3700B76E56 /* LWCThirdViewController.m */,
+				1B5670D919C7CDC900B76E56 /* LWCThirdViewController.xib */,
 				1B94D41C19C1648D0052EA92 /* Images.xcassets */,
 				1B94D41119C1648D0052EA92 /* Supporting Files */,
 			);
@@ -249,6 +257,7 @@
 				1B94D41519C1648D0052EA92 /* InfoPlist.strings in Resources */,
 				1B94D44D19C165580052EA92 /* LWCSecondViewController.xib in Resources */,
 				1B94D44819C165160052EA92 /* LWCFirstViewController.xib in Resources */,
+				1B5670DB19C7CDC900B76E56 /* LWCThirdViewController.xib in Resources */,
 				1B94D41D19C1648D0052EA92 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +279,7 @@
 			files = (
 				1B94D41719C1648D0052EA92 /* main.m in Sources */,
 				1B94D41B19C1648D0052EA92 /* LWCAppDelegate.m in Sources */,
+				1B5670DE19C7CF3700B76E56 /* LWCThirdViewController.m in Sources */,
 				1B94D44319C164FB0052EA92 /* BasicViewController.m in Sources */,
 				1B94D44C19C165580052EA92 /* LWCSecondViewController.m in Sources */,
 				1B94D43B19C164B90052EA92 /* LWCViewController.m in Sources */,
@@ -470,6 +480,7 @@
 				1B94D43519C1648D0052EA92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B94D43619C1648D0052EA92 /* Build configuration list for PBXNativeTarget "ViewsTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +489,7 @@
 				1B94D43819C1648D0052EA92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

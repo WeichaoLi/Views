@@ -8,6 +8,7 @@
 
 #import "LWCFirstViewController.h"
 #import "LWCSecondViewController.h"
+#import "LWCThirdViewController.h"
 
 @interface LWCFirstViewController ()
 
@@ -31,11 +32,27 @@
     
     self.view.backgroundColor = [UIColor yellowColor];
     
+//    if (self.rightViewController == nil) {
+//        LWCSecondViewController *secondVC = [[LWCSecondViewController alloc] initWithNibName:@"LWCSecondViewController" bundle:nil];
+//        [self SetLeftController:nil RightController:secondVC];
+//        secondVC.leftViewController = self;
+//        secondVC.rightViewController = self;
+//        [self.parentViewController addChildViewController:self.rightViewController];
+//    }
+    
     if (self.rightViewController == nil) {
         LWCSecondViewController *secondVC = [[LWCSecondViewController alloc] initWithNibName:@"LWCSecondViewController" bundle:nil];
-        [self SetLeftController:nil RightController:secondVC];
+        self.rightViewController = secondVC;
+        secondVC.leftViewController = self;
         [self.parentViewController addChildViewController:self.rightViewController];
     }
+    
+//    if (self.leftViewController == nil) {
+//        LWCThirdViewController *thirdVC = [[LWCThirdViewController alloc] initWithNibName:@"LWCThirdViewController" bundle:nil];
+//        self.leftViewController = thirdVC;
+//        thirdVC.rightViewController = self;
+//        [self.parentViewController addChildViewController:self.leftViewController];
+//    }
 }
 
 - (void)didReceiveMemoryWarning

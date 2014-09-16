@@ -51,6 +51,7 @@
             if (_rightViewController) {
                 _rightViewController.view.frame = CGRectMake(self.parentViewController.view.frame.size.width, 0, self.view.frame.size.width, self.view.frame.size.height);
                 [self.parentViewController.view insertSubview:_rightViewController.view belowSubview:self.view];
+                NSLog(@"%@",self.parentViewController.childViewControllers);
             }
             
             _CenterBeginX = self.view.transform.tx;

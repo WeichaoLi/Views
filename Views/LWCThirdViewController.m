@@ -1,20 +1,20 @@
 //
-//  LWCViewController.m
+//  LWCThirdViewController.m
 //  Views
 //
-//  Created by 李伟超 on 14-9-11.
+//  Created by 李伟超 on 14-9-16.
 //  Copyright (c) 2014年 LWC. All rights reserved.
 //
 
-#import "LWCViewController.h"
+#import "LWCThirdViewController.h"
 #import "LWCFirstViewController.h"
 #import "LWCSecondViewController.h"
 
-@interface LWCViewController ()
+@interface LWCThirdViewController ()
 
 @end
 
-@implementation LWCViewController
+@implementation LWCThirdViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,15 +29,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    firstViewCon = [[LWCFirstViewController alloc] initWithNibName:@"LWCFirstViewController" bundle:nil];
-//    secondViewCon = [[LWCSecondViewController alloc] initWithNibName:@"LWCSecondViewController" bundle:nil];
-//    
-//    firstViewCon.rightViewController = secondViewCon;
-//    secondViewCon.leftViewController = firstViewCon;
     
-    [self addChildViewController:firstViewCon];
-//    [self addChildViewController:secondViewCon];
-    [self.view addSubview:firstViewCon.view];
+    if (self.leftViewController == nil) {
+        LWCSecondViewController *secondVC = [[LWCSecondViewController alloc] initWithNibName:@"LWCSecondViewController" bundle:nil];
+        self.leftViewController = secondVC;
+        secondVC.rightViewController = self;
+    }
+//    if (self.rightViewController == nil) {
+//        LWCFirstViewController *firstVC = [[LWCFirstViewController alloc] initWithNibName:@"LWCFirstViewController" bundle:nil];
+//        self.rightViewController = firstVC;
+//        firstVC.leftViewController = self;
+//    }
+
 }
 
 - (void)didReceiveMemoryWarning
