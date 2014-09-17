@@ -9,6 +9,8 @@
 #import "BasicViewController.h"
 
 @interface BasicViewController (){
+    CGPoint _startPoint;
+    
     CGFloat _CenterBeginX;
     CGFloat _LeftBeginX;
     CGFloat _RightBeginX;
@@ -51,7 +53,7 @@
             if (_rightViewController) {
                 _rightViewController.view.frame = CGRectMake(self.parentViewController.view.frame.size.width, 0, self.view.frame.size.width, self.view.frame.size.height);
                 [self.parentViewController.view insertSubview:_rightViewController.view belowSubview:self.view];
-                NSLog(@"%@",self.parentViewController.childViewControllers);
+//                NSLog(@"%@",self.parentViewController.childViewControllers);
             }
             
             _CenterBeginX = self.view.transform.tx;
@@ -76,7 +78,9 @@
                         [self MovedTheView:0];
                     }
                     
-                }completion:^(BOOL finished){}];
+                }completion:^(BOOL finished){
+                    [_rightViewController.view removeFromSuperview];
+                }];
                 
             }else if (Xdistant < -120) { // 向左滑
                 
@@ -87,7 +91,9 @@
                             [self MovedTheView:0];
                         }
                         
-                    }completion:^(BOOL finished){}];
+                    }completion:^(BOOL finished){
+                        [_leftViewController.view removeFromSuperview];
+                    }];
                 
             }else {  //滑动距离太小，恢复原位
                 

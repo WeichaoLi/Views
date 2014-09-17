@@ -8,10 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BasicViewController : UIViewController<UIGestureRecognizerDelegate> {
-    CGPoint _startPoint;
-    
-}
+@interface BasicViewController : UIViewController<UIGestureRecognizerDelegate>
 
 @property (nonatomic, retain) BasicViewController *leftViewController;
 @property (nonatomic, retain) BasicViewController *rightViewController;

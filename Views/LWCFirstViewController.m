@@ -55,6 +55,10 @@
 //    }
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    NSLog(@"%s",__func__);
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
